@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-01-28 15:49:20
- * @LastEditTime : 2020-01-30 17:19:04
+ * @LastEditTime : 2020-01-30 17:29:47
  * @LastEditors  : Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \fullonce\src\index.js
@@ -46,5 +46,4 @@ serviceWorker.unregister();
 
 
 console.log('分支新增功能');
-console.log('主干继续编写');
-console.log('分支新增功能1');
+
