@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-01-28 15:49:20
- * @LastEditTime : 2020-01-30 17:29:47
+ * @LastEditTime : 2020-01-30 17:42:03
  * @LastEditors  : Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \fullonce\src\index.js
@@ -44,6 +44,4 @@ ReactDOM.render(
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-
-console.log('分支新增功能');
 
