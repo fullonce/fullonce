@@ -9,10 +9,9 @@ import 'moment/locale/zh-cn';
 import 'antd/dist/antd.css';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
-import { Route, Switch } from 'react-router' // react-router v4/v5
+import { ConfigProvider } from 'antd';
 import { ConnectedRouter } from 'connected-react-router'
-import configureStore, { history } from './store/'
-const store = configureStore(/* provide initial state if any */)
+import store, { history } from './store/'
 moment.locale('zh-cn');
 ReactDOM.render(
     <Provider store={store}>
@@ -23,7 +22,9 @@ ReactDOM.render(
                     <Route render={() => (<div>Miss</div>)} />
                 </Switch>
             </> */}
-            <App />
+            <ConfigProvider locale={zhCN}>
+                <App />
+            </ConfigProvider>
         </ConnectedRouter>
     </Provider>,
     document.getElementById('root')

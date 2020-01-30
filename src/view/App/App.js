@@ -1,18 +1,19 @@
 /*
  * @Author: your name
  * @Date: 2020-01-27 15:59:49
- * @LastEditTime : 2020-01-28 22:11:18
+ * @LastEditTime : 2020-01-28 23:00:24
  * @LastEditors  : Please set LastEditors
  * @Description: 公共首页
  * @FilePath: \fullonce\src\App.js
  */
 import React from 'react';
 import './App.css';
-import { Layout, Menu } from 'antd';
-import { Route } from 'react-router-dom'
+import { Layout } from 'antd';
+import { Route } from 'react-router-dom';
 
-import Side from './Side.jsx'
-import Breadcrumb from './Breadcrumb.jsx'
+import Side from './Side.jsx';
+import Breadcrumb from './Breadcrumb.jsx';
+import Test from '../../components/BoundTest.jsx'
 
 const { Header, Content } = Layout;
 
@@ -42,7 +43,7 @@ function App() {
               minHeight: 280,
             }}
           >
-            <Route path="/" component={Item} exact />
+            <Route path="/" component={Test} exact />
             <Route path="/two" component={Item2} />
           </Content>
         </Layout>
